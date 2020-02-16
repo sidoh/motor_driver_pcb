@@ -1,0 +1,306 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5E367D1B
+P 1050 1350
+F 0 "J1" H 1107 1675 50  0000 C CNN
+F 1 "Barrel_Jack" H 1107 1584 50  0000 C CNN
+F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-202A" H 1100 1310 50  0001 C CNN
+F 3 "~" H 1100 1310 50  0001 C CNN
+	1    1050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E368630
+P 1350 1950
+F 0 "#PWR02" H 1350 1700 50  0001 C CNN
+F 1 "GND" H 1355 1777 50  0000 C CNN
+F 2 "" H 1350 1950 50  0001 C CNN
+F 3 "" H 1350 1950 50  0001 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5E3694C7
+P 1350 900
+F 0 "#PWR01" H 1350 750 50  0001 C CNN
+F 1 "+12V" H 1365 1073 50  0000 C CNN
+F 2 "" H 1350 900 50  0001 C CNN
+F 3 "" H 1350 900 50  0001 C CNN
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 900  1350 1250
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A1
+U 1 1 5E36F925
+P 6300 2600
+F 0 "A1" H 6350 3481 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" H 6350 3390 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 6575 1850 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 6400 2300 50  0001 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1900 6300 1900
+$Comp
+L power:+12V #PWR010
+U 1 1 5E370CC9
+P 7100 1900
+F 0 "#PWR010" H 7100 1750 50  0001 C CNN
+F 1 "+12V" H 7115 2073 50  0000 C CNN
+F 2 "" H 7100 1900 50  0001 C CNN
+F 3 "" H 7100 1900 50  0001 C CNN
+	1    7100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1900 6850 1900
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 5E3717EF
+P 7750 2600
+F 0 "J2" H 7830 2592 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 7830 2501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 7750 2600 50  0001 C CNN
+F 3 "~" H 7750 2600 50  0001 C CNN
+	1    7750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2500 7550 2500
+Wire Wire Line
+	6800 2600 7550 2600
+Wire Wire Line
+	6800 2700 7550 2700
+Wire Wire Line
+	6800 2800 7550 2800
+$Comp
+L power:GND #PWR09
+U 1 1 5E372FD9
+P 6300 3950
+F 0 "#PWR09" H 6300 3700 50  0001 C CNN
+F 1 "GND" H 6305 3777 50  0000 C CNN
+F 2 "" H 6300 3950 50  0001 C CNN
+F 3 "" H 6300 3950 50  0001 C CNN
+	1    6300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3400 6300 3400
+Connection ~ 6300 3400
+$Comp
+L power:GND #PWR08
+U 1 1 5E37BD97
+P 5600 2500
+F 0 "#PWR08" H 5600 2250 50  0001 C CNN
+F 1 "GND" V 5605 2372 50  0000 R CNN
+F 2 "" H 5600 2500 50  0001 C CNN
+F 3 "" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U2
+U 1 1 5E37CBEC
+P 4450 4500
+F 0 "U2" V 4100 3900 50  0000 C CNN
+F 1 "WeMos_D1_mini" V 4000 4050 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 4450 3350 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2600 3350 50  0001 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5E382CC1
+P 5700 1700
+F 0 "#PWR07" H 5700 1550 50  0001 C CNN
+F 1 "+3.3V" H 5715 1873 50  0000 C CNN
+F 2 "" H 5700 1700 50  0001 C CNN
+F 3 "" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5E385223
+P 4550 3500
+F 0 "#PWR04" H 4550 3350 50  0001 C CNN
+F 1 "+3.3V" H 4565 3673 50  0000 C CNN
+F 2 "" H 4550 3500 50  0001 C CNN
+F 3 "" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3500 4550 3700
+$Comp
+L power:GND #PWR06
+U 1 1 5E385E38
+P 4450 5300
+F 0 "#PWR06" H 4450 5050 50  0001 C CNN
+F 1 "GND" H 4455 5127 50  0000 C CNN
+F 2 "" H 4450 5300 50  0001 C CNN
+F 3 "" H 4450 5300 50  0001 C CNN
+	1    4450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5E3961C4
+P 6850 1500
+F 0 "C3" H 6732 1454 50  0000 R CNN
+F 1 "1000µF" H 6732 1545 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 6888 1350 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nichicon/UVR1V102MHD/493-1085-ND/588826" H 6850 1500 50  0001 C CNN
+	1    6850 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 1650 6850 1900
+Connection ~ 6850 1900
+Wire Wire Line
+	6850 1900 6500 1900
+$Comp
+L power:GND #PWR0101
+U 1 1 5E3987D9
+P 6850 1200
+F 0 "#PWR0101" H 6850 950 50  0001 C CNN
+F 1 "GND" H 6855 1027 50  0000 C CNN
+F 2 "" H 6850 1200 50  0001 C CNN
+F 3 "" H 6850 1200 50  0001 C CNN
+	1    6850 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 1200 6850 1350
+Wire Wire Line
+	1350 1450 1350 1950
+Wire Wire Line
+	6300 3400 6300 3950
+Wire Wire Line
+	5900 2200 5700 2200
+Wire Wire Line
+	5700 1700 5700 1900
+Connection ~ 5700 1900
+Wire Wire Line
+	5700 1900 5700 2200
+$Comp
+L blinds_motor_driver:LM2596_HW411 U1
+U 1 1 5E354583
+P 2800 1300
+F 0 "U1" H 2775 1575 50  0000 C CNN
+F 1 "LM2596_HW411" H 2775 1484 50  0000 C CNN
+F 2 "blinds_motor_driver:LM2596_HW411" H 2800 1500 50  0001 C CNN
+F 3 "" H 2800 1500 50  0001 C CNN
+	1    2800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1250 2350 1250
+Connection ~ 1350 1250
+Wire Wire Line
+	1350 1450 2350 1450
+Wire Wire Line
+	2350 1450 2350 1400
+Connection ~ 1350 1450
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5E357644
+P 3500 1200
+F 0 "#PWR0102" H 3500 1050 50  0001 C CNN
+F 1 "+3.3V" H 3515 1373 50  0000 C CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1250 3500 1250
+Wire Wire Line
+	3500 1250 3500 1200
+$Comp
+L power:GND #PWR0103
+U 1 1 5E35885E
+P 3500 1500
+F 0 "#PWR0103" H 3500 1250 50  0001 C CNN
+F 1 "GND" H 3505 1327 50  0000 C CNN
+F 2 "" H 3500 1500 50  0001 C CNN
+F 3 "" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1400 3500 1400
+Wire Wire Line
+	3500 1400 3500 1500
+Wire Wire Line
+	5100 4200 4850 4200
+Text GLabel 5600 2700 0    50   Input ~ 0
+DIR
+Wire Wire Line
+	5900 2700 5600 2700
+Text GLabel 5600 2600 0    50   Input ~ 0
+STEP
+Wire Wire Line
+	5600 2600 5900 2600
+Wire Wire Line
+	4850 4300 5100 4300
+Text GLabel 5350 4400 2    50   Input ~ 0
+~SLEEP
+Wire Wire Line
+	5350 4400 4850 4400
+Text GLabel 5600 2300 0    50   Input ~ 0
+~SLEEP
+Wire Wire Line
+	5600 2300 5900 2300
+Text GLabel 5100 4500 2    50   Input ~ 0
+MS1
+Text GLabel 5600 2900 0    50   Input ~ 0
+MS1
+Wire Wire Line
+	5600 2900 5900 2900
+Wire Wire Line
+	5100 4500 4850 4500
+Text GLabel 5100 4600 2    50   Input ~ 0
+MS2
+Wire Wire Line
+	5100 4600 4850 4600
+Text GLabel 5600 3000 0    50   Input ~ 0
+MS2
+Wire Wire Line
+	5600 3000 5900 3000
+Text GLabel 5100 4700 2    50   Input ~ 0
+MS3
+Wire Wire Line
+	5100 4700 4850 4700
+Text GLabel 5600 3100 0    50   Input ~ 0
+MS3
+Wire Wire Line
+	5600 3100 5900 3100
+Wire Wire Line
+	5600 2500 5900 2500
+Text GLabel 5100 4300 2    50   Input ~ 0
+STEP
+Text GLabel 5100 4200 2    50   Input ~ 0
+DIR
+$EndSCHEMATC
